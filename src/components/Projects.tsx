@@ -1,6 +1,4 @@
-"use client";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, ExternalLink, X, ArrowUpRight } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
@@ -10,6 +8,18 @@ const categories = ["All", "AI / ML", "Web", "Data Science"];
 export default function Projects() {
     const [filter, setFilter] = useState("All");
     const [selectedProject, setSelectedProject] = useState<typeof portfolioData.projects[0] | null>(null);
+
+    // Lock body scroll when modal is open
+    useEffect(() => {
+        if (selectedProject) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+        return () => {
+            document.body.style.overflow = "unset";
+        };
+    }, [selectedProject]);
 
     const filteredProjects = portfolioData.projects.filter(
         (project) => filter === "All" || project.category === filter
@@ -117,19 +127,19 @@ export default function Projects() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+                            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
                             onClick={() => setSelectedProject(null)}
                         >
                             <motion.div
                                 initial={{ scale: 0.9, opacity: 0, y: 20 }}
                                 animate={{ scale: 1, opacity: 1, y: 0 }}
                                 exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                                className="bg-[#0b1221] border border-white/10 rounded-3xl max-w-3xl w-full overflow-hidden relative shadow-2xl"
+                                className="bg-[#0b1221] border border-white/10 rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-transparent"
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <button
                                     onClick={() => setSelectedProject(null)}
-                                    className="absolute top-4 right-4 p-2 rounded-full bg-black/50 text-white hover:bg-white hover:text-black transition-all z-20 backdrop-blur-sm border border-white/10"
+                                    className="absolute top-4 right-4 p-2 rounded-full bg-black/50 text-white hover:bg-white hover:text-black transition-all z-20 backdrop-blur-sm border border-white/10 sticky float-right"
                                 >
                                     <X className="w-5 h-5" />
                                 </button>
