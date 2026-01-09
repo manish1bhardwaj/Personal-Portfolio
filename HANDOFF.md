@@ -33,6 +33,7 @@ We have just completed a major overhaul of the application to ensure visual cons
     -   Fixed JSON syntax issues for multi-line descriptions.
     -   **UX Improvement:** Moved Project Modal action buttons to the top for better accessibility.
     -   **Bug Fix:** Resolved Modal overlay issue by locking body scroll and increasing z-index.
+    -   **Critical Fix:** Implemented `React.createPortal` to move Modal to root, completely solving stacking context overlaps.
 
 ## 📂 Key File Structure
 -   `src/data/portfolio.json` → **Main Data Source**. Edit this to change text, links, projects, and work experience.
