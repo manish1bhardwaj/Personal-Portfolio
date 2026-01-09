@@ -120,7 +120,10 @@ export default function Projects() {
                     </AnimatePresence>
                 </motion.div>
 
-                {/* Project Modal */}
+            </motion.div>
+
+            {/* Project Modal via Portal */}
+            {typeof document !== 'undefined' && createPortal(
                 <AnimatePresence>
                     {selectedProject && (
                         <motion.div
@@ -204,8 +207,10 @@ export default function Projects() {
                             </motion.div>
                         </motion.div>
                     )}
-                </AnimatePresence>
-            </div>
-        </section>
+                </AnimatePresence>,
+                document.body
+            )}
+        </div>
+        </section >
     );
 }
