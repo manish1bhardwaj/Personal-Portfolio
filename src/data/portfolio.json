@@ -78,8 +78,7 @@
             "title": "Core Programming & Problem Solving",
             "skills": [
                 "Python",
-                "Java",
-                "C++"
+                "Java"
             ]
         },
         {
@@ -87,14 +86,20 @@
             "skills": [
                 "Machine Learning",
                 "Deep Learning",
-                "Neural Networks"
+                "Neural Networks",
+                "GAN",
+                "GEN-AI",
+                "NLP"
             ]
         },
         {
             "title": "Model Development Tools",
             "skills": [
                 "Scikit-learn",
-                "TensorFlow"
+                "TensorFlow",
+                "PyTorch",
+                "Keras",
+                "scipy"
             ]
         },
         {
@@ -102,7 +107,12 @@
             "skills": [
                 "Pandas",
                 "NumPy",
-                "Matplotlib"
+                "Matplotlib",
+                "Seaborn",
+                "Plotly",
+                "nltk",
+                "spacy",
+                "textblob"
             ]
         },
         {
@@ -110,40 +120,50 @@
             "skills": [
                 "Git",
                 "Linux",
-                "VS Code"
+                "VS Code",
+                "jupyter notebook",
+                "colab"
             ]
         }
     ],
     "projects": [
         {
             "id": 1,
-            "title": "AI Image Generator",
-            "category": "AI / ML",
-            "image": "https://images.unsplash.com/photo-1617791160505-6f00504e3519?q=80&w=1000&auto=format&fit=crop",
-            "description": "A deep learning model capable of generating realistic images from text descriptions using Stable Diffusion.",
+            "title": "E-commerce recommendation system",
+            "category": "AI / ML / NLP",
+            "image": "https://www.electronicsforu.com/special/cool-stuff-misc/e-commerce-recommendation-systems",
+            "description": "Developed an intelligent e-commerce recommendation system using Flask and machine learning techniques. Implemented content-based, collaborative filtering, and hybrid models to provide personalized product suggestions. Integrated the system into a Flask-based web application featuring user authentication, product browsing, and dynamic recommendations. Leveraged libraries like NumPy, pandas, scikit-learn, and TensorFlow for data processing and model training. This project enhances user engagement, improves customer satisfaction, and delivers a seamless shopping experience.",
             "tech": [
                 "Python",
-                "PyTorch",
-                "React",
-                "FastAPI"
+                "Flask",
+                "NumPy",
+                "pandas",
+                "scikit-learn",
+                "TensorFlow",
+                "HTML",
+                "CSS",
+                "JavaScript"
             ],
-            "github": "#",
-            "demo": "#"
+            "github": "https://github.com/manish1bhardwaj/Machine_Learning_Project",
+            "demo": "https://github.com/manish1bhardwaj/Machine_Learning_Project"
         },
         {
             "id": 2,
-            "title": "Smart Health Assistant",
-            "category": "Data Science",
+            "title": "AI Based Exam Evaluation System",
+            "category": "Full stack/ AI / ML / NLP",
             "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop",
-            "description": "Healthcare prediction system using patient data to forecast potential health risks with 95% accuracy.",
+            "description": "AI-Based Exam Evaluation System is an intelligent web application designed to automate and enhance the traditional exam evaluation process using Artificial Intelligence and Natural Language Processing (NLP) techniques.\n\nThe system evaluates subjective/descriptive answers by analyzing semantic similarity, keyword relevance, and conceptual correctness between student responses and model answers. This reduces human bias, saves time, and ensures fair and consistent assessment.\n\nThe platform supports real-time evaluation, instant scoring, and structured feedback, making it suitable for educational institutions, online examinations, and skill assessment platforms.",
             "tech": [
-                "Scikit-learn",
-                "Pandas",
+                "Python",
+                "ML",
+                "NLP",
                 "Flask",
-                "D3.js"
+                "HTML",
+                "CSS",
+                "JavaScript"
             ],
-            "github": "#",
-            "demo": "#"
+            "github": "https://github.com/manish1bhardwaj/AI-BASED-EXAM-EVALUTION",
+            "demo": "#https://ai-based-exam-evalution.vercel.app/"
         },
         {
             "id": 3,
@@ -199,24 +219,17 @@
     "experience": [
         {
             "id": 1,
-            "role": "AI / ML Intern",
-            "company": "Tech Solutions Inc.",
-            "duration": "June 2024 - Present",
-            "description": "Developing computer vision models for automated quality control. Improved model accuracy by 15% using transfer learning techniques."
+            "role": "Data Science Intern",
+            "company": "Skillcred",
+            "duration": "June 2024 - August 2024",
+            "description": "Data Analyst Micro Experience Program with SkillCred!,Where i learn Data Analysis and Advance Excel and done Assignments and Projects"
         },
         {
             "id": 2,
-            "role": "Full Stack Developer",
-            "company": "Freelance",
-            "duration": "Jan 2023 - May 2024",
-            "description": "Built and deployed 5+ responsive websites for local businesses using React and Node.js. Implemented SEO best practices increasing organic traffic by 40%."
-        },
-        {
-            "id": 3,
-            "role": "Research Assistant",
-            "company": "University AI Lab",
-            "duration": "Aug 2022 - Dec 2022",
-            "description": "Assisted in data preprocessing and analysis for a research paper on Natural Language Processing. Collaborated with a team of 3 researchers."
+            "role": "Applied Machine Learning Intern",
+            "company": "W3Grads",
+            "duration": "June 2025 - August 2025",
+            "description": "Applied Machine Learning with Generative AI Intern at W3grads | GLA University (Jun 2025 – Jul 2025).\n\nWorked on real-world ML and GenAI projects including:\n\n• Car Price Prediction\n• Plant Disease Detection\n• Customer Churn Prediction\n• RAG-based GenAI Application\n\nBuilt and deployed several models, strengthening my skills in machine learning, data preprocessing, model evaluation, and deployment.\n\nSkills: Python · Machine Learning · Scikit-learn · Streamlit · Model Deployment · Generative AI · RAG · Data Analysis."
         }
     ],
     "certifications": [
