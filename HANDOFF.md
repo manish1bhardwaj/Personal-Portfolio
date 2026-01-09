@@ -31,6 +31,8 @@ We have just completed a major overhaul of the application to ensure visual cons
     -   Updated Experience (Skillcred, W3Grads).
     -   Updated Skills (GenAI, NLP, etc.).
     -   Fixed JSON syntax issues for multi-line descriptions.
+    -   **UX Improvement:** Moved Project Modal action buttons to the top for better accessibility.
+    -   **Bug Fix:** Resolved Modal overlay issue by locking body scroll and increasing z-index.
 
 ## 📂 Key File Structure
 -   `src/data/portfolio.json` → **Main Data Source**. Edit this to change text, links, projects, and work experience.
