@@ -11,6 +11,14 @@ export default function Projects() {
     const [filter, setFilter] = useState("All");
     const [selectedProject, setSelectedProject] = useState<typeof portfolioData.projects[0] | null>(null);
 
+    const [filter, setFilter] = useState("All");
+    const [selectedProject, setSelectedProject] = useState<typeof portfolioData.projects[0] | null>(null);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
     // Lock body scroll when modal is open
     useEffect(() => {
         if (selectedProject) {
@@ -122,10 +130,8 @@ export default function Projects() {
                     </AnimatePresence>
                 </motion.div>
 
-
-
                 {/* Project Modal via Portal */}
-                {typeof document !== 'undefined' && createPortal(
+                {mounted && createPortal(
                     <AnimatePresence>
                         {selectedProject && (
                             <motion.div
