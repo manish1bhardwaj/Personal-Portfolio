@@ -26,6 +26,11 @@ We have just completed a major overhaul of the application to ensure visual cons
     -   **Resume Button:** Added to Navbar, controlled via Admin/Config.
     -   **Footer:** Redesigned to 3-column layout.
     -   **Icons:** Fixed social media mapping and distinct skill icons.
+4.  **Content Update (Jan 9):**
+    -   Updated Projects (E-commerce, Exam Evaluation).
+    -   Updated Experience (Skillcred, W3Grads).
+    -   Updated Skills (GenAI, NLP, etc.).
+    -   Fixed JSON syntax issues for multi-line descriptions.
 
 ## 📂 Key File Structure
 -   `src/data/portfolio.json` → **Main Data Source**. Edit this to change text, links, projects, and work experience.
