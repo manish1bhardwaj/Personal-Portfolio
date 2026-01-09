@@ -120,97 +120,97 @@ export default function Projects() {
                     </AnimatePresence>
                 </motion.div>
 
-            </motion.div>
 
-            {/* Project Modal via Portal */}
-            {typeof document !== 'undefined' && createPortal(
-                <AnimatePresence>
-                    {selectedProject && (
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
-                            onClick={() => setSelectedProject(null)}
-                        >
+
+                {/* Project Modal via Portal */}
+                {typeof document !== 'undefined' && createPortal(
+                    <AnimatePresence>
+                        {selectedProject && (
                             <motion.div
-                                initial={{ scale: 0.9, opacity: 0, y: 20 }}
-                                animate={{ scale: 1, opacity: 1, y: 0 }}
-                                exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                                className="bg-[#0b1221] border border-white/10 rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-transparent"
-                                onClick={(e) => e.stopPropagation()}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+                                onClick={() => setSelectedProject(null)}
                             >
-                                <button
-                                    onClick={() => setSelectedProject(null)}
-                                    className="absolute top-4 right-4 p-2 rounded-full bg-black/50 text-white hover:bg-white hover:text-black transition-all z-20 backdrop-blur-sm border border-white/10 sticky float-right"
+                                <motion.div
+                                    initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                                    animate={{ scale: 1, opacity: 1, y: 0 }}
+                                    exit={{ scale: 0.9, opacity: 0, y: 20 }}
+                                    className="bg-[#0b1221] border border-white/10 rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl scrollbar-thin scrollbar-thumb-primary/50 scrollbar-track-transparent"
+                                    onClick={(e) => e.stopPropagation()}
                                 >
-                                    <X className="w-5 h-5" />
-                                </button>
+                                    <button
+                                        onClick={() => setSelectedProject(null)}
+                                        className="absolute top-4 right-4 p-2 rounded-full bg-black/50 text-white hover:bg-white hover:text-black transition-all z-20 backdrop-blur-sm border border-white/10 sticky float-right"
+                                    >
+                                        <X className="w-5 h-5" />
+                                    </button>
 
-                                <div className="aspect-video relative">
-                                    <img
-                                        src={selectedProject.image}
-                                        alt={selectedProject.title}
-                                        className="w-full h-full object-cover"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#0b1221] via-transparent to-transparent opacity-90" />
-                                    <div className="absolute bottom-0 left-0 p-8 w-full">
-                                        <span className="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary border border-primary/20 text-xs font-bold mb-3 backdrop-blur-md">
-                                            {selectedProject.category}
-                                        </span>
-                                        <h3 className="text-4xl font-bold text-white mb-2">{selectedProject.title}</h3>
-                                    </div>
-                                </div>
-
-                                <div className="p-8 pt-6">
-                                    <div className="grid grid-cols-2 gap-4 mb-8">
-                                        <a
-                                            href={selectedProject.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="py-3 rounded-xl bg-white/5 text-white font-bold border border-white/10 hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2 group"
-                                        >
-                                            <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                                            Source Code
-                                        </a>
-                                        <a
-                                            href={selectedProject.demo}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold hover-shadow-glow-strong hover:scale-[1.02] transition-all flex items-center justify-center gap-2 active:scale-95"
-                                        >
-                                            <ExternalLink className="w-5 h-5" />
-                                            Live Demo
-                                        </a>
-                                    </div>
-
-                                    <div className="mb-8">
-                                        <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">
-                                            Technologies Used
-                                        </h4>
-                                        <div className="flex flex-wrap gap-2">
-                                            {selectedProject.tech.map((tech) => (
-                                                <span
-                                                    key={tech}
-                                                    className="px-4 py-2 rounded-lg bg-white/5 text-sm text-gray-300 border border-white/5 hover:border-primary/30 hover:bg-primary/5 transition-colors cursor-default"
-                                                >
-                                                    {tech}
-                                                </span>
-                                            ))}
+                                    <div className="aspect-video relative">
+                                        <img
+                                            src={selectedProject.image}
+                                            alt={selectedProject.title}
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-[#0b1221] via-transparent to-transparent opacity-90" />
+                                        <div className="absolute bottom-0 left-0 p-8 w-full">
+                                            <span className="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary border border-primary/20 text-xs font-bold mb-3 backdrop-blur-md">
+                                                {selectedProject.category}
+                                            </span>
+                                            <h3 className="text-4xl font-bold text-white mb-2">{selectedProject.title}</h3>
                                         </div>
                                     </div>
 
-                                    <p className="text-gray-300 leading-relaxed text-lg">
-                                        {selectedProject.description}
-                                    </p>
-                                </div>
+                                    <div className="p-8 pt-6">
+                                        <div className="grid grid-cols-2 gap-4 mb-8">
+                                            <a
+                                                href={selectedProject.github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="py-3 rounded-xl bg-white/5 text-white font-bold border border-white/10 hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2 group"
+                                            >
+                                                <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                                                Source Code
+                                            </a>
+                                            <a
+                                                href={selectedProject.demo}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold hover-shadow-glow-strong hover:scale-[1.02] transition-all flex items-center justify-center gap-2 active:scale-95"
+                                            >
+                                                <ExternalLink className="w-5 h-5" />
+                                                Live Demo
+                                            </a>
+                                        </div>
+
+                                        <div className="mb-8">
+                                            <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">
+                                                Technologies Used
+                                            </h4>
+                                            <div className="flex flex-wrap gap-2">
+                                                {selectedProject.tech.map((tech) => (
+                                                    <span
+                                                        key={tech}
+                                                        className="px-4 py-2 rounded-lg bg-white/5 text-sm text-gray-300 border border-white/5 hover:border-primary/30 hover:bg-primary/5 transition-colors cursor-default"
+                                                    >
+                                                        {tech}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
+
+                                        <p className="text-gray-300 leading-relaxed text-lg">
+                                            {selectedProject.description}
+                                        </p>
+                                    </div>
+                                </motion.div>
                             </motion.div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>,
-                document.body
-            )}
-        </div>
+                        )}
+                    </AnimatePresence>,
+                    document.body
+                )}
+            </div>
         </section >
     );
 }
