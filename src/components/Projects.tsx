@@ -10,9 +10,6 @@ const categories = ["All", "AI / ML", "Web", "Data Science"];
 export default function Projects() {
     const [filter, setFilter] = useState("All");
     const [selectedProject, setSelectedProject] = useState<typeof portfolioData.projects[0] | null>(null);
-
-    const [filter, setFilter] = useState("All");
-    const [selectedProject, setSelectedProject] = useState<typeof portfolioData.projects[0] | null>(null);
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
