@@ -1,0 +1,263 @@
+{
+    "personal": {
+        "name": "Manish Bhardwaj",
+        "role": "AIML Student & Full Stack Developer",
+        "bio": "A passionate B.Tech AIML student. Building intelligent, data-driven systems by blending core computer science, modern AI techniques, and practical model development.",
+        "availability": "Available for work",
+        "location": "India",
+        "email": "bhardwajmanish0010@gmail.com",
+        "phone": "+91 8930141138",
+        "profileImage": "/Ma.png",
+        "resumeUrl": "/resume.pdf"
+    },
+    "social": [
+        {
+            "name": "Github",
+            "icon": "Github",
+            "url": "https://github.com/manish1bhardwaj"
+        },
+        {
+            "name": "LinkedIn",
+            "icon": "Linkedin",
+            "url": "https://www.linkedin.com/in/manish-bhardwaj-6243aa228/"
+        },
+        {
+            "name": "Twitter",
+            "icon": "Twitter",
+            "url": "https://twitter.com"
+        },
+        {
+            "name": "Email",
+            "icon": "Mail",
+            "url": "mailto:bhardwajmanish0010@gmail.com"
+        }
+    ],
+    "hero": {
+        "typingText": [
+            "AI Solutions",
+            2000,
+            "Neural Networks",
+            2000,
+            "Web Applications",
+            2000,
+            "Smart Systems",
+            2000
+        ]
+    },
+    "about": {
+        "title": "About Me",
+        "description": [
+            "I am a B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning. My journey began with a curiosity about how machines learn, which gradually evolved into a passion for building intelligent, real-world systems.",
+            "With a strong foundation in AI concepts, data-driven approaches, and core computer science fundamentals, I focus on developing reliable and impactful solutions. I am always eager to explore emerging technologies and take on challenging, problem-driven projects."
+        ],
+        "features": [
+            {
+                "icon": "Brain",
+                "title": "Artificial Intelligence & Machine Learning",
+                "description": "Developing intelligent systems using machine learning, deep learning, and data-driven approaches."
+            },
+            {
+                "icon": "Database",
+                "title": "Data Science",
+                "description": "Working with structured data for analysis, visualization, and insight generation."
+            },
+            {
+                "icon": "Code2",
+                "title": "Programming & Development",
+                "description": "Implementing solutions using Python and Java, with a basic understanding of web technologies."
+            },
+            {
+                "icon": "Rocket",
+                "title": "Applied Learning & Innovation",
+                "description": "Continuously exploring emerging AI technologies to solve real-world problems."
+            }
+        ]
+    },
+    "skills": [
+        {
+            "title": "Core Programming & Problem Solving",
+            "skills": [
+                "Python",
+                "Java",
+                "C++"
+            ]
+        },
+        {
+            "title": "AI & Intelligent Systems",
+            "skills": [
+                "Machine Learning",
+                "Deep Learning",
+                "Neural Networks"
+            ]
+        },
+        {
+            "title": "Model Development Tools",
+            "skills": [
+                "Scikit-learn",
+                "TensorFlow"
+            ]
+        },
+        {
+            "title": "Data Handling & Visualization",
+            "skills": [
+                "Pandas",
+                "NumPy",
+                "Matplotlib"
+            ]
+        },
+        {
+            "title": "Tools & Environment",
+            "skills": [
+                "Git",
+                "Linux",
+                "VS Code"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "AI Image Generator",
+            "category": "AI / ML",
+            "image": "https://images.unsplash.com/photo-1617791160505-6f00504e3519?q=80&w=1000&auto=format&fit=crop",
+            "description": "A deep learning model capable of generating realistic images from text descriptions using Stable Diffusion.",
+            "tech": [
+                "Python",
+                "PyTorch",
+                "React",
+                "FastAPI"
+            ],
+            "github": "#",
+            "demo": "#"
+        },
+        {
+            "id": 2,
+            "title": "Smart Health Assistant",
+            "category": "Data Science",
+            "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop",
+            "description": "Healthcare prediction system using patient data to forecast potential health risks with 95% accuracy.",
+            "tech": [
+                "Scikit-learn",
+                "Pandas",
+                "Flask",
+                "D3.js"
+            ],
+            "github": "#",
+            "demo": "#"
+        },
+        {
+            "id": 3,
+            "title": "E-Commerce Platform",
+            "category": "Web",
+            "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
+            "description": "Full-stack e-commerce solution with real-time inventory management and secure payment integration.",
+            "tech": [
+                "Next.js",
+                "Node.js",
+                "MongoDB",
+                "Stripe"
+            ],
+            "github": "#",
+            "demo": "#"
+        },
+        {
+            "id": 4,
+            "title": "Voice Assistant",
+            "category": "AI / ML",
+            "image": "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=1000&auto=format&fit=crop",
+            "description": "Natural Language Processing based voice assistant that can perform system tasks and answer queries.",
+            "tech": [
+                "Python",
+                "NLTK",
+                "SpeechRecognition",
+                "PyAudio"
+            ],
+            "github": "#",
+            "demo": "#"
+        }
+    ],
+    "achievements": [
+        {
+            "title": "National CyberShield Hackathon",
+            "organization": "MP Police",
+            "description": "National Finalist (Top 35)",
+            "status": "Finalist"
+        },
+        {
+            "title": "TechJam 2.0",
+            "organization": "Code Rangers × Microsoft",
+            "description": "National Finalist (Top 40)",
+            "status": "Finalist"
+        },
+        {
+            "title": "Arjuna 2.0",
+            "organization": "NIT Agartala",
+            "description": "National Finalist (Top 5)",
+            "status": "Finalist"
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "role": "AI / ML Intern",
+            "company": "Tech Solutions Inc.",
+            "duration": "June 2024 - Present",
+            "description": "Developing computer vision models for automated quality control. Improved model accuracy by 15% using transfer learning techniques."
+        },
+        {
+            "id": 2,
+            "role": "Full Stack Developer",
+            "company": "Freelance",
+            "duration": "Jan 2023 - May 2024",
+            "description": "Built and deployed 5+ responsive websites for local businesses using React and Node.js. Implemented SEO best practices increasing organic traffic by 40%."
+        },
+        {
+            "id": 3,
+            "role": "Research Assistant",
+            "company": "University AI Lab",
+            "duration": "Aug 2022 - Dec 2022",
+            "description": "Assisted in data preprocessing and analysis for a research paper on Natural Language Processing. Collaborated with a team of 3 researchers."
+        }
+    ],
+    "certifications": [
+        {
+            "title": "TensorFlow Developer Certificate",
+            "issuer": "Google",
+            "date": "2023",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
+            "link": "#"
+        },
+        {
+            "title": "AWS Certified Machine Learning",
+            "issuer": "Amazon Web Services",
+            "date": "2023",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+            "link": "#"
+        },
+        {
+            "title": "Deep Learning Specialization",
+            "issuer": "Coursera / DeepLearning.AI",
+            "date": "2022",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+            "link": "#"
+        }
+    ],
+    "stats": [
+        {
+            "label": "Projects Completed",
+            "value": "15+"
+        },
+        {
+            "label": "Lines of Code",
+            "value": "50k+"
+        },
+        {
+            "label": "Hours of Coding",
+            "value": "2000+"
+        },
+        {
+            "label": "Coffee Cups",
+            "value": "500+"
+        }
+    ]
+}
