@@ -149,10 +149,27 @@ export default function Projects() {
                                     </div>
                                 </div>
 
-                                <div className="p-8 pt-2">
-                                    <p className="text-gray-300 mb-8 leading-relaxed text-lg">
-                                        {selectedProject.description}
-                                    </p>
+                                <div className="p-8 pt-6">
+                                    <div className="grid grid-cols-2 gap-4 mb-8">
+                                        <a
+                                            href={selectedProject.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="py-3 rounded-xl bg-white/5 text-white font-bold border border-white/10 hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2 group"
+                                        >
+                                            <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                                            Source Code
+                                        </a>
+                                        <a
+                                            href={selectedProject.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold hover-shadow-glow-strong hover:scale-[1.02] transition-all flex items-center justify-center gap-2 active:scale-95"
+                                        >
+                                            <ExternalLink className="w-5 h-5" />
+                                            Live Demo
+                                        </a>
+                                    </div>
 
                                     <div className="mb-8">
                                         <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">
@@ -170,26 +187,9 @@ export default function Projects() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <a
-                                            href={selectedProject.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="py-4 rounded-xl bg-white/5 text-white font-bold border border-white/10 hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2 group"
-                                        >
-                                            <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                                            Source Code
-                                        </a>
-                                        <a
-                                            href={selectedProject.demo}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="py-4 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold hover-shadow-glow-strong hover:scale-[1.02] transition-all flex items-center justify-center gap-2 active:scale-95"
-                                        >
-                                            <ExternalLink className="w-5 h-5" />
-                                            Live Demo
-                                        </a>
-                                    </div>
+                                    <p className="text-gray-300 leading-relaxed text-lg">
+                                        {selectedProject.description}
+                                    </p>
                                 </div>
                             </motion.div>
                         </motion.div>
