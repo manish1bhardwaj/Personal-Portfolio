@@ -131,7 +131,7 @@
             "id": 1,
             "title": "E-commerce recommendation system",
             "category": "AI / ML / NLP",
-            "image": "https://placehold.co/800x600/1e293b/4f46e5?text=Recommendation+System",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
             "description": "Developed an intelligent e-commerce recommendation system using Flask and machine learning techniques. Implemented content-based, collaborative filtering, and hybrid models to provide personalized product suggestions. Integrated the system into a Flask-based web application featuring user authentication, product browsing, and dynamic recommendations. Leveraged libraries like NumPy, pandas, scikit-learn, and TensorFlow for data processing and model training. This project enhances user engagement, improves customer satisfaction, and delivers a seamless shopping experience.",
             "tech": [
                 "Python",
@@ -151,7 +151,7 @@
             "id": 2,
             "title": "AI Based Exam Evaluation System",
             "category": "Full stack/ AI / ML / NLP",
-            "image": "https://placehold.co/800x600/1e293b/4f46e5?text=Exam+Evaluation",
+            "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800",
             "description": "AI-Based Exam Evaluation System is an intelligent web application designed to automate and enhance the traditional exam evaluation process using Artificial Intelligence and Natural Language Processing (NLP) techniques.\n\nThe system evaluates subjective/descriptive answers by analyzing semantic similarity, keyword relevance, and conceptual correctness between student responses and model answers. This reduces human bias, saves time, and ensures fair and consistent assessment.\n\nThe platform supports real-time evaluation, instant scoring, and structured feedback, making it suitable for educational institutions, online examinations, and skill assessment platforms.",
             "tech": [
                 "Python",
@@ -169,7 +169,7 @@
             "id": 3,
             "title": "E-Commerce Platform",
             "category": "Web",
-            "image": "https://placehold.co/800x600/1e293b/4f46e5?text=E-Commerce+Platform",
+            "image": "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=800",
             "description": "Full-stack e-commerce solution with real-time inventory management and secure payment integration.",
             "tech": [
                 "Next.js",
@@ -184,7 +184,7 @@
             "id": 4,
             "title": "Voice Assistant",
             "category": "AI / ML",
-            "image": "https://placehold.co/800x600/1e293b/4f46e5?text=Voice+Assistant",
+            "image": "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=800",
             "description": "Natural Language Processing based voice assistant that can perform system tasks and answer queries.",
             "tech": [
                 "Python",
@@ -198,22 +198,22 @@
     ],
     "achievements": [
         {
-            "title": "Smart India Hackathon",
-            "organization": "Govt of India",
-            "description": "National Winner (Software Edition)",
+            "title": "Best Innovation Award 2024",
+            "organization": "TechGlitch Hackathon",
+            "description": "Awarded for the most innovative AI solution",
             "status": "Winner"
         },
         {
-            "title": "Code for Good",
-            "organization": "JPMorgan Chase",
-            "description": "Best Social Impact Solution",
-            "status": "Winner"
+            "title": "Top 50 Global Finalist",
+            "organization": "The Coders Championship",
+            "description": "Selected among 10,000+ participants globally",
+            "status": "Finalist"
         },
         {
-            "title": "Google Cloud Hero",
-            "organization": "Google Cloud",
-            "description": "Top performer in Cloud Sprint",
-            "status": "Champion"
+            "title": "Outstanding Project of the Year",
+            "organization": "University Annual Showcase",
+            "description": "Recognized for exceptional technical depth",
+            "status": "Winner"
         }
     ],
     "experience": [
@@ -234,24 +234,24 @@
     ],
     "certifications": [
         {
-            "title": "Full Stack Developer Nanodegree",
-            "issuer": "Udacity",
+            "title": "Advanced Full Stack Web Development",
+            "issuer": "FutureTech Academy",
             "date": "2024",
-            "image": "https://placehold.co/100x100/1e293b/4f46e5?text=Udacity",
+            "image": "https://placehold.co/100x100/1e293b/4f46e5?text=Web+Dev",
             "link": "#"
         },
         {
-            "title": "Professional Cloud Architect",
-            "issuer": "Google Cloud",
+            "title": "Applied Machine Learning Specialist",
+            "issuer": "AI Institute",
+            "date": "2023",
+            "image": "https://placehold.co/100x100/1e293b/4f46e5?text=AI+Cert",
+            "link": "#"
+        },
+        {
+            "title": "Cloud Solutions Architect Associate",
+            "issuer": "Global Cloud Certifications",
             "date": "2023",
             "image": "https://placehold.co/100x100/1e293b/4f46e5?text=Cloud",
-            "link": "#"
-        },
-        {
-            "title": "Certified Kubernetes Administrator",
-            "issuer": "CNCF",
-            "date": "2023",
-            "image": "https://placehold.co/100x100/1e293b/4f46e5?text=K8s",
             "link": "#"
         }
     ],
