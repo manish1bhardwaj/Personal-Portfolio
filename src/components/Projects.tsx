@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, ExternalLink, X, ArrowUpRight } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
+
 
 const categories = ["All", "AI / ML", "Web", "Data Science"];
 
